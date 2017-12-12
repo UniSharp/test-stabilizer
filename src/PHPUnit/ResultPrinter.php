@@ -2,14 +2,20 @@
 
 namespace UniSharp\PHPUnit;
 
-use PHPUnit\Framework\Test;
+use PHPUnit\Framework\TestSuite;
 
 class ResultPrinter extends \PHPUnit\TextUI\ResultPrinter
 {
-    public function startTest(Test $test)
-    {
-        parent::startTest($test);
+    protected $printed = false;
 
-        echo file_get_contents(__DIR__ . '/stubs/seafood.txt', true) . PHP_EOL;
+    public function startTestSuite(TestSuite $suite)
+    {
+        parent::startTestSuite($suite);
+
+        if (!$this->printed) {
+            echo file_get_contents(__DIR__ . '/stubs/seafood.txt', true) . PHP_EOL;
+
+            $this->printed = true;
+        }
     }
 }
