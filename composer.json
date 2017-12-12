@@ -1,0 +1,28 @@
+{
+    "name": "unisharp/test-stabilizer",
+    "authors": [
+        {
+            "name": "Sasaya",
+            "email": "storyn26383@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "UniSharp\\": "src"
+        }
+    },
+    "require-dev": {
+        "php": "^7.0",
+        "phpunit/phpunit": "^6.4",
+        "mockery/mockery": "^1.0",
+        "squizlabs/php_codesniffer": "^3.1",
+        "doctrine/instantiator": "1.0.5"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    }
+}
