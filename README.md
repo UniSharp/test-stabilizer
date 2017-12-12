@@ -4,6 +4,8 @@ Make your tests more stable.
 
 [![Build Status](https://travis-ci.org/UniSharp/test-stabilizer.svg?branch=master)](https://travis-ci.org/UniSharp/test-stabilizer)
 
+![test-stabilizer](https://i.imgur.com/1CSkLH5.png)
+
 ## Installation
 
 ```bash
